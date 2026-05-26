@@ -5,11 +5,12 @@
 <template>
   <header>
     <nav>
-      <h1><RouterLink to="/"><img src="" alt="LOGO"></RouterLink></h1>
+      <h1><RouterLink to="/"><img src="/public/logoDefinitiva.png" alt="LOGO"></RouterLink></h1>
       <ul>
         <li><RouterLink to="/">Home</RouterLink></li>
         <li><RouterLink to="/produtos">Produtos</RouterLink></li>
         <li><RouterLink to="/carrinho">Carrinho</RouterLink></li>
+        <li><RouterLink to="/categorias">Categorias</RouterLink></li>
       </ul>
     </nav>
   </header>
@@ -39,6 +40,9 @@ ul{
 h1{
   margin: 0 auto 0 0;
   color: black;
+}
+h1 img{
+  max-width: 15%;
 }
 a{
     text-decoration: none;
