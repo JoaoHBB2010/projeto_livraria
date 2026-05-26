@@ -213,48 +213,48 @@
   },
   {
     id: '24',
-    titulo: '',
-    autor: '',
-    resenha: '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Manual de Defesa Criminal para Defensores Públicos e Advogados - Volume 1 - Parte Geral - 3ª edição',
+    autor: 'Jaime Leônidas Miranda Alves',
+    resenha: ' O livro “Fábrica de Criminalistas” surgiu muito dos debates do dia a dia com colegas defensores. Surgiu também nas salas de audiências, de situações práticas que, no momento, não sabia exatamente como agir. Surgiu de anos aperfeiçoando a arte que é fazer defesa criminal estratégica. No “Fábrica de Criminalistas” – volume 1, compartilho com o leitor a experiência adquirida em mais de 5 anos de defesa criminal, realizando audiências e peticionamentos todos os dias. Buscamos ensinar ao leitor atuação defensiva desde o momento da prisão e identificação e elaboração dos pedidos de liberdade pertinentes até a interposição de recursos e sustentação oral nos Tribunais Superiores, passando por temas como atuação na delegacia de polícia, resposta à acusação, ANPP, audiência de instrução e julgamento, alegações finais, atuação no Juizado Especial Criminal e habeas corpus. Tudo com uma pegada prática. O livro foi pensado para contribuir com a formação prática de defensores e advogados, qualificando a defesa criminal com vias a frear o punitivismo que corrói o sistema de justiça.',
+    preco: 167,
+    capa: 'https://m.media-amazon.com/images/I/71lBzedCtXL._SL1500_.jpg',
+    categoria: 'Direito'
   },
   {
     id: '25',
-    titulo: '',
-    autor: '',
-    resenha: '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Direito Digital - 8ª Edição 2026',
+    autor: 'Patricia Peck Pinheiro',
+    resenha: 'Para além de uma disciplina autônoma, o Direito Digital tornou-se um tema transversal a qualquer iniciativa contemporânea do Direito, incontornável para qualquer advogado ou profissional de tecnologia que queira se manter atualizado.',
+    preco: 399,
+    capa: 'https://m.media-amazon.com/images/I/7113H4Qd9kL._SL1500_.jpg',
+    categoria: 'Direito'
   },
   {
     id: '26',
-    titulo: '',
-    autor: '',
-    resenha: '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Física Quântica - Átomos, Moléculas, Sólidos, Núcleos e Partículas',
+    autor: 'Robert Robert Elsberg',
+    resenha: ' Uma apresentação clara das propriedades de quase todos os sistemas quânticos importantes, do ponto de vista da Mecânica Quântica Elementar. O livro foi concebido para ser utilizado em cursos de um ano por estudantes que já passaram por tratamentos substanciais de Cálculo Diferencial e Integral Elementar e de Física Clássica Elementar. No entanto, ele também pode ser usado em cursos menores.Os Capítulos 1 a 4 introduzem os vários fenômenos do início da Física Quântica e desenvolvem as idéias essenciais da primitiva teoria quântica. Nos Capítulos de 5 a 8 e parte do 9, os fundamentos da Mecânica Quântica e suas aplicações a átomos de um e dois elétrons.átomos multieletrônicos - estados fundamentais e excitações de raios X; átomos multieletrônicos - excitações óticas; estatísticas quânticas; moléculas; sólidos - condutores e semicondutores; sólidos - propriedades supercondutoras e magnéticas; modelos nucleares; decaimento nuclear e reações nucleares; partículas elementares. Cada capítulo abre com um resumo detalhado e apresenta inúmeros exemplos trabalhados e um conjunto de questões no final. O livro tem ainda seções e tabelas de resumo, e grandes e variados conjuntos de problemas totalmente testados no final de cada capítulo, com subconjunto de respostas no final do livro.',
+    preco: 719,
+    capa: 'https://m.media-amazon.com/images/I/81KaMt+ivAL._SL1500_.jpg',
+    categoria: 'Física'
   },
   {
     id: '27',
-    titulo: '',
-    autor: '',
-    resenha: '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Introdução à Física Nuclear e de Hádrons',
+    autor: 'Débora Peres Menezes',
+    resenha: 'A obra se destina a alunos de graduação e de pós-graduação em física. O material básico necessário para um curso introdutório de física nuclear e de partículas elementares, em nível fenomenológico, é praticamente coberto pelos seis primeiros capítulos. A distribuição dos tópicos está feita de modo a levar o aluno a, num primeiro momento, entender as principais propriedades dos núcleos atômicos e, a seguir, ver como elas podem ser descritas por alguns dos modelos mais usados na literatura da área. Depois da explicação fenomenológica para a introdução das partículas elementares como constituintes básicos da matéria, apresentada no capítulo 6, são introduzidas características importantes das interações fundamentais e, na sequência, alguns modelos relativísticos que descrevem, tanto matéria hadrônica (nuclear), quanto matéria de quarks (subnuclear) são apresentados. Equações de estado calculadas a partir desses modelos são aplicadas na descrição de estrelas de nêutrons.',
+    preco: 110,
+    capa: 'https://m.media-amazon.com/images/I/71g-DU1bxTL._SL1500_.jpg',
+    categoria: 'Física'
   },
   {
     id: '28',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Análise estrutural para engenharia civil e arquitetura: estruturas isostáticas',
+    autor: 'Moacir Kripka',
+    resenha: 'Estruturas isostáticas são o sustento da engenharia como o solo é o sustento da vida ou a linguagem está para a comunicação. Leia com atenção Análise estrutural para Engenharia Civil e Arquitetura para entender o comportamento das estruturas isostáticas e seu dimensionamento. O livro aborda os conceitos fundamentais necessários para operar estruturas e modelos estruturais, reações de apoio, ações em estruturas e esforços solicitantes. Didático, com explicações passo a passo para a análise de vigas, pórticos, treliças e grelhas, facilitará a apropriação do conhecimento pelos estudantes. Esta terceira edição inclui um novo capítulo sobre cálculo de deslocamentos em estruturas. A teoria e os cálculos são acompanhados de exemplos e ilustrações de obras civis e, ao final de cada capítulo, exercícios propostos auxiliam a compreensão e fixação dos conceitos envolvidos, e sua aplicação em qualquer situação que se apresente. Esta obra se destina a estudantes de Engenharia Civil e Arquitetura e serve de roteiro aos professores que ministram a disciplina.',
+    preco: 90,
+    capa: 'https://m.media-amazon.com/images/I/71nn20QriLL._SL1500_.jpg',
+    categoria: 'Engenharia'
   },
   {
     id: '29',
