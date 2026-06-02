@@ -28,6 +28,7 @@ footer{
 }
 footer a{
     text-decoration: none;
+    padding-left: 11%;
 }
 footer img{
     max-width: 15%;
