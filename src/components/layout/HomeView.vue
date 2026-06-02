@@ -3,9 +3,13 @@
 </script>
 
 <template>
-  Hello World!
+  <section>
+    <h1>Seu próximo destino está em nossas páginas.</h1>
+    <h2>Verifique nossos livros</h2> <button>Aqui</button>
+  <img src="/public/livrariasite.jpeg" alt="Livro">
+  </section>
+
 </template>
 
 <style scoped>
-
-</style>
+</style> 
