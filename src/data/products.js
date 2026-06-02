@@ -258,146 +258,146 @@
   },
   {
     id: '29',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Fundamental Principles of Nuclear Engineering',
+    autor: 'Jiyag Yu',
+    resenha: 'A book teachinnng about the principles and foundation of nuclear engineering, the most effective energy source according to its author: Jiyang Tu',
+    preco: 473.28,
+    capa: 'https://m.media-amazon.com/images/I/51s4JuTI9GL._SL1254_.jpg',
+    categoria: 'Engenharia'
   },
   {
     id: '30',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Engenharia Clínica: Teorias, técnicas e práticas em direção às qualificações e acreditação',
+    autor: 'Gilson Barboas Machado',
+    resenha: 'Esta obra apresenta os fundamentos, práticas e desafios da Engenharia Clínica, revelando sua origem singular e seu papel essencial na gestão tecnológica da saúde. Compartilha experiências reais para aprimorar resultados e garantir segurança aos pacientes.',
+    preco: 101.9,
+    capa: 'https://m.media-amazon.com/images/I/51LRLRDShbL.jpg',
+    categoria: 'Engenharia'
   },
   {
     id: '31',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Comandos Elétricos: Fundamentos Para o Ensino Técnico',
+    autor: 'André Barros de Mello Oliveria',
+    resenha: 'O livro Comandos Elétricos: Fundamentos para o Ensino Técnico apresenta inicialmente os aspectos básicos de motores elétricos, com ênfase nos motores de indução trifásicos, hoje extremamente aplicados nos processos industriais. No primeiro capítulo, é apresentada a operação do motor, sob o efeito do campo magnético girante, com equações e diagramas fasoriais. Os seus diversos parâmetros são apresentados, como o conjugado e as principais características nominais. Nos capítulos 2, 3 e 4, são apresentados os dispositivos utilizados em circuitos de comandos elétricos, como botoeiras, chaves seletoras/comutadoras, chaves de fim-de-curso, chaves seccionadoras, dispositivos de sinalização, contatores e dispositivos de proteção e de temporização. Nos capítulos 5 e 6, são apresentados diversos circuitos de comando para os motores monofásicos e trifásicos, respectivamente. No último capítulo, são destacadas algumas aplicações básicas de comandos elétricos em baixa tensão. O livro traz em cada capítulo algumas séries de exercícios de fixação e são sugeridas simulações com o uso do aplicativo CADe Simu, bastante difundido na área de Comandos Elétricos. Outra contribuição desta obra é um guia de aulas práticas, muito úteis para os professores que ministram a disciplina de Comandos Elétricos.',
+    preco: 107,
+    capa: 'https://m.media-amazon.com/images/I/711wssjTYjL._SL1500_.jpg',
+    categoria: 'Engenharia'
   },
   {
     id: '32',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Cálculo I - 12.ed.',
+    autor: 'Howard Anton & Irl Bivens',
+    resenha: 'Nesta 12ª edição,  Cálculo  reafirma seu compromisso com o equilíbrio entre compreensão acessível e precisão matemática – mantendo as qualidades que o tornaram referência nos cursos de exatas. Com textos atualizados, novos exercícios cuidadosamente projetados e uma abordagem clara e rigorosa, esta edição foi revisada por um seleto grupo de professores para atender às exigências do ensino moderno – sem perder o que conquistou gerações de educadores e estudantes. A teoria é apresentada com flexibilidade e profundidade, adaptando-se a diferentes metodologias e perfis de curso. Traz também uma revisão completa de Trigonometria, abordagem moderna das integrais, apoio ao uso de tecnologia e notas históricas que dão vida aos conceitos. Mais do que um livro,  Cálculo – 12ª Edição  conecta a matemática ao mundo real e prepara o estudante para os desafios de carreiras nas engenharias, ciências, economia e administração.',
+    preco: 244,
+    capa: 'https://m.media-amazon.com/images/I/71l8-MbCf1L._SL1500_.jpg',
+    categoria: 'Matemática'
   },
   {
     id: '33',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Business Statistics Essentials You Always Wanted to Know: Master Data Analysis, Regression, Probability, Hypothesis Testing & Decision Making for Business Success',
+    autor: 'Bianca Szasz',
+    resenha: 'Bridge the gap between core statistical theory and everyday business applications with this practical, reader-friendly guide to business statistics. Business Statistics Essentials You Always Wanted to Know enables you to build your statistical base, which is crucial to success in diverse fields such as finance, marketing, operations, human resources, and strategic planning.',
+    preco: 208.84,
+    capa: 'https://m.media-amazon.com/images/I/71qfhrMx8+L._SL1500_.jpg',
+    categoria: 'Matematica'
   },
   {
     id: '34',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Matemática discreta: Uma introdução',
+    autor: 'Edward Scheinerman',
+    resenha: 'Dirigida a interessados em matemática discreta de maneira geral, esta obra apresenta uma visão geral de toda a matemática a partir da perspectiva da matemática discreta. O livro cobre desde a natureza da matemática (definições, teoremas, provas e contraexemplos), lógica, conjuntos e relações, até técnica avançadas de prova, probabilidades discretas, teoria dos números, teoria dos grafos e álgebra abstrata, incluindo aplicações em criptografia. Esta terceira edição conta com muitos problemas e exercícios que exploram as interligações entre os diversos temas tratados.',
+    preco: 318,
+    capa: 'https://m.media-amazon.com/images/I/618IZyAukgL._SL1046_.jpg',
+    categoria: 'Matemática'
   },
   {
     id: '35',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Física Matemática - Métodos Matemáticos para Engenharia e Física',
+    autor: 'George George Arfken',
+    resenha: 'Agora, em sua 7ª edição, Física Matemática continua a fornecer todos os métodos matemáticos que estudantes de Física e Engenharia precisam em suas futuras carreiras como cientistas e pesquisadores. Este best-seller fornece relações matemáticas e suas provas essenciais para o estudo da física e áreas afins. Apesar de manter as principais características da 6ª edição, a nova edição oferece um equilíbrio mais cuidadoso entre explicação, teoria e exemplos. Adotando a habilidade na resolução de problemas como método pedagógico para incorporar teoremas com aplicações, o livro vai ajudar os alunos a ter sucesso ao longo de suas carreiras acadêmicas e também em suas profissões. Algumas melhorias notáveis desta nova edição incluem conteúdo com maior foco e refino em tópicos importantes, uma melhor organização, anotações atualizadas, explicações exaustivas e conjuntos de exercícios intuitivos, maior quantidade de problemas resolvidos, e amplo grau dificuldade dos exercícios. Outras novidades: Texto totalmente revisado e atualizado; Foco na habilidade de resolução de problemas e aprendizagem ativa, oferecendo inúmeros problemas e exercícios em cada capítulo; Nova organização do conteúdo e divisão dos capítulos; Exemplos novos e atualizados; Explicações mais intuitivas.',
+    preco: 501,
+    capa: 'https://m.media-amazon.com/images/I/81OEctfdQ1L._SL1500_.jpg',
+    categoria: 'Matematica'
   },
   {
     id: '36',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'História Geral do Brasil',
+    autor: 'Fracisco Adolfo de Varnhage (Viscode de Porto Seguro)',
+    resenha: 'História Geral do Brasil de Francisco Adolfo de Varnhagen Considerado o pai da historiografia brasileira, Francisco Adolfo de Varnhagen, Visconde de Porto Seguro, deixou nesta obra monumental o primeiro grande esforço de sistematizar a trajetória do Brasil desde o descobrimento até o século XIX. Publicado originalmente em meados do século XIX, o livro apresenta uma narrativa detalhada e fundamentada em documentos inéditos da época, fruto da incansável pesquisa de Varnhagen em arquivos da Europa e do Brasil. É uma obra indispensável para compreender como se formou a identidade nacional e como os acontecimentos políticos, sociais e culturais moldaram o país. Mais do que um livro de história, História Geral do Brasil é um marco intelectual: um clássico que influenciou gerações de historiadores, estudiosos e amantes da história. Apesar de refletir a mentalidade de sua época, permanece como fonte obrigatória para quem deseja entender a construção da nação brasileira e as raízes de nossa história.',
+    preco: 678,
+    capa: 'https://m.media-amazon.com/images/I/61WRRwFUBYL._SL1080_.jpg',
+    categoria: 'Historia'
   },
   {
     id: '37',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'História da China: O retrato de uma civlilização e de seu povo',
+    autor: 'Michael Wood',
+    resenha: 'A China é a civilização mais antiga da Terra, mas sua história é pouco conhecida pelo resto do mundo. A narrativa brilhante de Michael Wood – que oferece um vasto panorama, combinando histórias locais e de suas próprias viagens – é um relato fascinante de uma tradição de quatro mil anos que traz à tona mistérios que vão desde a Grande Muralha da China à Cidade Proibida. A partir de um retrato envolvente de uma civilização e seu povo, este livro está cheio de detalhes íntimos e vozes ressonantes que nos levam das desérticas estepes da Mongólia até o mundo ultramoderno de Pequim, Xangai e Hong Kong.História da China conta uma narrativa cheia de drama, criatividade e profunda humanidade de um dos países mais importantes do século XXI.',
+    preco: 89.9,
+    capa: 'https://m.media-amazon.com/images/I/91kL5-xXcoL._SL1500_.jpg',
+    categoria: 'Historia'
   },
   {
     id: '38',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Prisioneiros da geografia: 10 mapas que explicam tudo o que você precisa saber sobre política global',
+    autor: 'Tim Marshall',
+    resenha: 'Edição revista e atualizada pelo autor para a edição brasileira. A geografia está muito mais presente em nossa vida do que percebemos. Ela delimita poder, guerras, política e o desenvolvimento social e humano, incluindo língua, comércio e religião. E assim é para todas as nações, grandes ou pequenas: a paisagem aprisiona seus líderes, dando-lhes menos escolhas e margem de manobra do que pensamos. Considere, por exemplo, a Rússia: se ela tivesse montanhas no seu oeste e acesso às águas mornas do oceano Índico, não se preocuparia com ataques vindos da Ucrânia e teria portos que nunca congelam – e o cenário político da Europa e da Ásia seria diferente. Jornalista experiente, Tim Marshall explica a geopolítica global através de dez mapas centrais, examinando as principais regiões estratégicas do mundo: Rússia, China, Estados Unidos, Europa Ocidental, África, Oriente Médio, Índia e Paquistão, Japão e Coreia, América Latina e, por fim, o Ártico. Abrangendo passado e presente e olhando para o futuro, oferece reflexões de relevância imediata, num texto acessível e descontraído. Uma leitura que vai fazer você enxergar o mundo – e os mapas – de outra maneira.',
+    preco: 82.9,
+    capa: 'https://m.media-amazon.com/images/I/81hgN8dtZDL._SL1500_.jpg',
+    categoria: 'Geografia'
   },
   {
     id: '39',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Geopolítica:: do pensamento clássico aos conflitos contemporâneos',
+    autor: 'Augusto W. M. Teixeira Júnior',
+    resenha: 'Ainda que a conjuntura contemporânea se caracterize pelas intensas mudanças da realidade humana, o meio e as manifestações da natureza continuam perenes. Assim, em um cenário em que percebemos que o avanço acelerado da tecnologia ocasiona e intensifica fenômenos como a globalização, a mundialização, a regionalização e o encurtamento das distâncias de tempo e espaço, como podemos avaliar a instabilidade que esses processos causam em todo o mundo? Para refletir sobre isso, vamos discutir as contribuições da Geopolítica no estudo das relações de controle político do espaço.',
+    preco: 96,
+    capa: 'https://m.media-amazon.com/images/I/81vWGnHnPwL._SL1465_.jpg',
+    categoria: 'Geografia'
   },
   {
     id: '41',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Geografia Histórica do Brasil. Capitalismo, Território e Periferia',
+    autor: 'Antonio Carlos Robert Moraes',
+    resenha: 'Esta obra procura mostrar a especificidade da geografia histórica do Brasil, indicando os fundamentos teórico-metodológicos que a sustentam, visando a constituir um exercício e uma tentativa de tratar tal matéria e fornecer uma argumentação acerca do tema.',
+    preco: 58.8,
+    capa: 'https://m.media-amazon.com/images/I/61MfkI3o-nL._SL1016_.jpg',
+    categoria: 'Geografia'
   },
   {
     id: '42',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Arquitetura: Forma, Espaço e Ordem',
+    autor: 'Fracis D. K. Ching',
+    resenha: 'Formato clássico, texto claro e ilustrações detalhadas fazem de Arquitetura: Forma, Espaço e Ordem um dos livros mais populares sobre os fundamentos da arquitetura. Esta nova edição apresenta uma revisão completa do texto e das ilustrações, além de uma nova organização dos capítulos para refletir as mudanças na prática arquitetônica. O livro cobre os princípios básicos de forma, espaço e ordem, explorando temas como proporção, escala, ritmo, simetria e hierarquia. Com exemplos de projetos arquitetônicos históricos e contemporâneos, esta obra é essencial para estudantes e profissionais que desejam compreender os fundamentos da arquitetura e aprimorar suas habilidades de design.',
+    preco: 231,
+    capa: 'https://m.media-amazon.com/images/I/71tpCK80FpL._SL1500_.jpg',
+    categoria: 'Arquitetura'
   },
   {
     id: '43',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Patrimônio colonial latino-americano: Urbanismo, arquitetura, arte sacra',
+    autor: 'Percival Tirapeli',
+    resenha: 'Fruto de extensa pesquisa de Percival Tirapeli, professor da Unesp, esta obra ricamente ilustrada abrange três séculos de arte colonial e é dividida em três partes – “Urbanismo colonial”, “Arquitetura eclesiástica” e “Arte sacra – mobiliário e ornamentação”.',
+    preco: 115,
+    capa: 'https://m.media-amazon.com/images/I/A1GNQXKkhYL._SL1500_.jpg',
+    categoria: 'Arquitetura'
   },
   {
     id: '44',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Trilhos Anatômicos: Meridianos Miofasciais para terapeutas manuais e do movimento',
+    autor: 'Thomas W. Myers & Fernando Gomes do Nascimento',
+    resenha: 'Disponível em 15 idiomas, a nova edição deste best-seller mundial constitui uma referência imprescindível a todos os profissionais e estudantes que lidam com a estrutura e o movimento do corpo humano. Com uma abordagem inovadora, o livro apresenta os meridianos miofasciais, ou trilhos anatômicos, que são caminhos de tecido conjuntivo que percorrem todo o corpo, conectando músculos, ossos e órgãos. A obra é ricamente ilustrada com diagramas detalhados e fotografias que facilitam a compreensão dos conceitos apresentados. Além disso, inclui técnicas práticas para avaliação e tratamento dos meridianos miofasciais, tornando-se uma ferramenta valiosa para terapeutas manuais, fisioterapeutas, osteopatas e outros profissionais da área da saúde.',
+    preco: 369,
+    capa: 'https://m.media-amazon.com/images/I/81ewSApcRJL._SL1500_.jpg',
+    categoria: 'Medicina'
   },
   {
     id: '45',
-    titulo: '',
-    autor: '',
-    resenha '',
-    preco: ,
-    capa: '',
-    categoria: ''
+    titulo: 'Medicina de emergência: Abordagem Prática',
+    autor: 'Ludhmila Abrahão Hajjar',
+    resenha: 'Obra editada por professores do pronto-socorro do Hospital das Clínicas da Faculdade de Medicina da USP; referência para médicos, residentes e estudantes de medicina que atuam ou desejam atuar na área de emergências.',
+    preco: 498,
+    capa: 'https://m.media-amazon.com/images/I/81i9bV+dcvL._SL1500_.jpg',
+    categoria: 'Medicina'
   },
 ]
