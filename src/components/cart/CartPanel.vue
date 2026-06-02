@@ -10,7 +10,7 @@
 import { ref, computed } from 'vue'
 import CartItem from '@/components/cart/CartItem.vue'
 import CartSummary from '@/components/cart/CartSummary.vue'
-import { carrinho } from '@/utils/cartUtils'
+import { carrinho } from '@/ultils/cartUtils'
 
 const cartItems = ref([...carrinho])
 

@@ -69,3 +69,5 @@
     capa: 'https://covers.openlibrary.org/b/isbn/9781118008188-L.jpg',
   },
 ]
+
+export { produtos }
