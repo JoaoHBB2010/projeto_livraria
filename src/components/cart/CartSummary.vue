@@ -30,8 +30,9 @@ const finalCompra = () => {
 
 <style scoped>
 .cart-summary {
-  border-top: 1px solid #ccc;
+  border-top: 2px solid #eee;
   padding-top: 16px;
+  margin-top: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,16 +50,19 @@ const finalCompra = () => {
 }
 
 .summary-info strong {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  color: #111;
 }
 
 button {
   background: #2d8cff;
   color: white;
   border: none;
-  padding: 10px 18px;
-  border-radius: 6px;
+  padding: 12px 24px;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 button:hover {

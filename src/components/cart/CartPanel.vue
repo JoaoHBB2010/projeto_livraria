@@ -9,7 +9,8 @@
 
 import { ref, computed } from 'vue'
 import CartItem from '@/components/cart/CartItem.vue'
-import { carrinho } from '@/ultils/cartUtils'
+import CartSummary from '@/components/cart/CartSummary.vue'
+import { carrinho } from '@/utils/cartUtils'
 
 const cartItems = ref([...carrinho])
 
@@ -41,12 +42,11 @@ function retirar(id) {
 function remove(id) {
   cartItems.value = cartItems.value.filter((p) => p.id !== id)
 }
-
 </script>
 
 <template>
   <div class="cart-panel">
-    <h1>Carrinho</h1>
+    <h1>Carrinho sla</h1>
 
     <div v-if="cartItems.length">
       <CartItem
@@ -58,12 +58,10 @@ function remove(id) {
         @remove="remove"
       />
 
-      <div class="cart-total">
-        <strong>Total:</strong> R$ {{ total.toFixed(2) }}
-      </div>
+      <CartSummary :total="total" />
     </div>
 
-    <p v-else>O carrinho está vazio.</p>
+    <p v-else class="carrinho-vazio">O carrinho está vazio.</p>
   </div>
 </template>
 
@@ -74,9 +72,17 @@ function remove(id) {
   padding: 20px;
 }
 
-.cart-total {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  text-align: right;
+.cart-panel h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.carrinho-vazio {
+  text-align: center;
+  color: #aaa;
+  margin-top: 40px;
+  font-size: 1rem;
 }
 </style>
