@@ -13,5 +13,24 @@ import AppFooter from './components/layout/AppFooter.vue';
   <AppFooter />
 </template>
 
-<style scoped>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+}
 </style>
