@@ -401,3 +401,4 @@
     categoria: 'Medicina'
   },
 ]
+export { produtos }
