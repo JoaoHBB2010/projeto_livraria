@@ -37,6 +37,10 @@ const finalCompra = () => {
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .summary-info {

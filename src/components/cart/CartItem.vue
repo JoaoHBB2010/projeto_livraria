@@ -52,6 +52,9 @@ const emit = defineEmits([
 .cart-item-info {
   flex: 1;
 }
+.cart-item-info h2{
+  color: #1a1a1a;
+}
 
 .cart-item-info h2 {
   font-size: 1rem;
