@@ -1,21 +1,10 @@
 <script setup>
-// Este arquivo é um componente Vue que permite ao
-// usuário visualizar e gerenciar os itens em seu carrinho
-// de compras. Ele exibe uma lista de itens, permite que o
-// usuário ajuste as quantidades ou remova itens, e mostra
-// um resumo do total do carrinho. O componente é projetado
-// para ser usado em uma página de carrinho de compras, onde
-// os usuários podem revisar seus itens antes de finalizar a compra.
-
 import { ref, computed } from 'vue'
 import CartItem from '@/components/cart/CartItem.vue'
 import CartSummary from '@/components/cart/CartSummary.vue'
-import { carrinho } from '@/ultils/cartUtils'
-import ProductCard from '../products/ProductCard.vue'
-import { produtos } from '@/data/products'
-const cartItems = ref([...carrinho])
+import { carrinho } from '@/ultils/cartUtils' 
 
-const livros = ref(produtos)
+const cartItems = carrinho
 
 const total = computed(() =>
   cartItems.value.reduce(
@@ -23,21 +12,6 @@ const total = computed(() =>
     0
   )
 )
-
-function adicionarCarrinho(livro) {
-  const item = cartItems.value.find(i => i.id === livro.id)
-
-  if (item) {
-    item.quantidade = (item.quantidade ?? 1) + 1
-    item.precoTotal = item.quantidade * item.preco
-  } else {
-    cartItems.value.push({
-      ...livro,
-      quantidade: 1,
-      precoTotal: livro.preco
-    })
-  }
-}
 
 function incluir(id) {
   const item = cartItems.value.find((p) => p.id === id)
@@ -58,22 +32,17 @@ function retirar(id) {
 }
 
 function remove(id) {
-  cartItems.value = cartItems.value.filter((p) => p.id !== id)
+  const index = cartItems.value.findIndex((p) => p.id === id)
+  if (index !== -1) {
+    cartItems.value.splice(index, 1)
+  }
 }
 </script>
 
 <template>
   <div class="cart-panel">
-    <h1>Carrinho sla</h1>
-    <div class="produtos">
-      <ProdutoCard
-        v-for="livro in livros"
-        :key="livro.id"
-        :livro="livro"
-        @adicionarCarrinho="adicionarCarrinho"
-      />
-    </div>
-
+    <h1>Carrinho de Compras</h1>
+    
     <div v-if="cartItems.length">
       <CartItem
         v-for="item in cartItems"
@@ -112,7 +81,13 @@ function remove(id) {
   text-align: center;
   color: #aaa;
   margin-top: 40px;
-  font-size: 1rem;
+  font-size: 2rem;
+  align-items: center;
+  color: #0ba720;
+  font-weight: bold;
+  margin-top: 15vw;
+  background: #eee;
+  border: #0ba720 solid 5px;
+  border-radius: 10px;
 }
 </style>
-
