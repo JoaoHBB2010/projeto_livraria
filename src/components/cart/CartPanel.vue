@@ -83,11 +83,11 @@ function remove(id) {
   margin-top: 40px;
   font-size: 2rem;
   align-items: center;
-  color: #0ba720;
+  color: #1e293b;
   font-weight: bold;
   margin-top: 15vw;
   background: #eee;
-  border: #0ba720 solid 5px;
+  border: black solid 5px;
   border-radius: 10px;
 }
 </style>
