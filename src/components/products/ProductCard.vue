@@ -99,9 +99,9 @@ const mostrarDetalhes = ref(false)
   color: #1e293b;
   margin: 0 0 6px 0;
   line-height: 1.4;
-  display: -webkit-box;
+  display: block; 
+  line-clamp: 2; 
   -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   overflow: hidden;
   height: 2.8rem;
 }
