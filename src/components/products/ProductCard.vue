@@ -1,5 +1,3 @@
-produtoCard.vue
-
 <script setup>
 import { ref } from 'vue'
 
@@ -10,125 +8,185 @@ defineProps({
 const emit = defineEmits(['adicionarCarrinho'])
 
 const mostrarDetalhes = ref(false)
-
-function adicionarCarrinho(livro) {
-  const item = cartItems.value.find(i => i.id === livro.id)
-
-  if (item) {
-    item.quantidade = (item.quantidade ?? 1) + 1
-    item.precoTotal = item.quantidade * item.preco
-  } else {
-    cartItems.value.push({
-      ...livro,
-      quantidade: 1,
-      precoTotal: livro.preco
-    })
-  }
-}
 </script>
 
 <template>
   <div class="card-container">
-    <div class="card">
-      <img :src="livro.capa" :alt="livro.titulo" class="capa" />
+    <div class="card-content">
+      <div class="capa-wrapper">
+        <img :src="livro.capa" :alt="livro.titulo" class="capa" />
+      </div>
 
-      <h3>{{ livro.titulo }}</h3>
-      <p class="preco">R$ {{ livro.preco }}</p>
+      <h3 class="titulo-livro">{{ livro.titulo }}</h3>
+      <p class="autor-livro">Por: {{ livro.autor }}</p>
+      <p class="preco">R$ {{ livro.preco.toFixed(2) }}</p>
 
       <button
+        type="button"
         @click="mostrarDetalhes = !mostrarDetalhes"
         class="btn-detalhes"
+        :class="{ 'btn-ativo': mostrarDetalhes }"
       >
         {{ mostrarDetalhes ? 'Ocultar Detalhes' : 'Ver Detalhes' }}
       </button>
 
-      <div v-if="mostrarDetalhes" class="detalhes">
-        <p><strong>Autor:</strong> {{ livro.autor }}</p>
-        <p><strong>Descrição:</strong> {{ livro.resenha }}</p>
-      </div>
+      <Transition name="fade">
+        <div v-if="mostrarDetalhes" class="detalhes">
+          <p><strong>Descrição:</strong> {{ livro.resenha }}</p>
+        </div>
+      </Transition>
     </div>
 
     <button
-  class="btn-carrinho"
-  @click="emit('adicionarCarrinho', livro)"
->
-  Adicionar ao Carrinho
-</button>
+      type="button"
+      class="btn-carrinho"
+      @click="emit('adicionarCarrinho', livro)"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+      </svg>
+      Adicionar ao Carrinho
+    </button>
   </div>
 </template>
 
 <style scoped>
 .card-container {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  background-color: #f9f9f9;
-  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
 }
 
 .card-container:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-color: #cbd5e1;
+}
+
+.card-content {
+  margin-bottom: 16px;
+}
+
+.capa-wrapper {
+  width: 100%;
+  height: 240px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  background-color: #f8fafc;
 }
 
 .capa {
   width: 100%;
-  height: 220px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  transition: transform 0.5s ease;
 }
 
-h3 {
-  font-size: 16px;
-  margin: 10px 0;
-  color: #333;
+.card-container:hover .capa {
+  transform: scale(1.04);
+}
+
+.titulo-livro {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 6px 0;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 2.8rem;
+}
+
+.autor-livro {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 0 0 8px 0;
 }
 
 .preco {
-  color: #27ae60;
-  font-weight: bold;
-  font-size: 20px;
-  margin: 10px 0;
+  color: #10b981;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 12px 0;
 }
 
 .btn-detalhes {
-  background-color: #95a5a6;
-  color: white;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 4px;
+  background-color: #f1f5f9;
+  color: #475569;
+  padding: 8px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
   cursor: pointer;
-  margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  width: 100%;
+  margin-bottom: 8px;
 }
 
 .btn-detalhes:hover {
-  background-color: #7f8c8d;
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+.btn-detalhes.btn-ativo {
+  background-color: #475569;
+  color: #ffffff;
+  border-color: #475569;
 }
 
 .detalhes {
-  background-color: #ecf0f1;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  text-align: left;
-  font-size: 14px;
-  color: black;
+  background-color: #f8fafc;
+  border-left: 3px solid #64748b;
+  padding: 10px 12px;
+  border-radius: 0 6px 6px 0;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #334155;
+  line-height: 1.5;
 }
 
 .btn-carrinho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  background-color: #3498db;
-  color: white;
-  padding: 10px;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 12px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
-  font-weight: bold;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .btn-carrinho:hover {
-  background-color: #2980b9;
+  background-color: #1d4ed8;
+}
+
+.btn-carrinho:active {
+  transform: scale(0.98);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
 }
 </style>

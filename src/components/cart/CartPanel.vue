@@ -11,9 +11,8 @@ import { ref, computed } from 'vue'
 import CartItem from '@/components/cart/CartItem.vue'
 import CartSummary from '@/components/cart/CartSummary.vue'
 import { carrinho } from '@/ultils/cartUtils'
-import ProdutoCard from '@/components/ProdutoCard.vue'
+import ProductCard from '../products/ProductCard.vue'
 import { produtos } from '@/data/products'
-
 const cartItems = ref([...carrinho])
 
 const livros = ref(produtos)
@@ -116,3 +115,4 @@ function remove(id) {
   font-size: 1rem;
 }
 </style>
+
