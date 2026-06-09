@@ -1,22 +1,19 @@
 <script setup>
 import { useRouter } from 'vue-router';
-// Ajuste o caminho abaixo dependendo de onde o seu arquivo products.js está salvo
+
 import { produtos } from '@/data/products';
 
 const router = useRouter();
 
-// Pegamos apenas os 3 primeiros livros para exibir como destaque na Home
 const livrosEmDestaque = produtos.slice(0, 3);
 
-// Função para o botão do banner ir para o catálogo geral
 const irParaCatalogo = () => {
-  router.push('/produtos'); // Certifique-se de ter uma rota com esse caminho configurada
+  router.push('/produtos');
 };
 
-// INTEGRADO: Função que leva para a página de produtos passando o ID do livro como parâmetro na URL
+
 const verDetalhes = (id) => {
-  // Isso vai gerar uma rota como: /produtos?destaque=1
-  router.push({ path: '/produtos', query: { destaque: id } }); 
+  router.push({ path: '/produtos', query: { destaque: id } });
 };
 </script>
 
@@ -35,12 +32,12 @@ const verDetalhes = (id) => {
     <div class="vitrine">
       <div v-for="livro in livrosEmDestaque" :key="livro.id" class="card-livro">
         <img :src="livro.capa" :alt="'Capa do livro ' + livro.titulo" class="capa-livro" />
-        
+
         <div class="info-livro">
           <h3>{{ livro.titulo }}</h3>
           <p class="autor">{{ livro.autor }}</p>
           <p class="preco">R$ {{ livro.preco.toFixed(2).replace('.', ',') }}</p>
-          
+
           <button class="btn-detalhes" @click="verDetalhes(livro.id)">Ver Detalhes</button>
         </div>
       </div>
@@ -52,10 +49,10 @@ const verDetalhes = (id) => {
 .banner-home {
   text-align: center;
   padding: 60px 20px;
-  background-color: #1a1a1a; /* Cor um pouco mais escura para destacar o texto */
+  background-color: #1a1a1a;
   color: white;
   margin-bottom: 20px;
-  border-radius: 8px; /* Cantos arredondados */
+  border-radius: 8px;
   margin-top: 80px;
 }
 
@@ -85,7 +82,6 @@ h1 {
   font-size: 18px;
 }
 
-/* Estilos dos Botões */
 button {
   cursor: pointer;
   border: none;
@@ -97,7 +93,7 @@ button {
 .btn-banner {
   padding: 12px 24px;
   font-size: 18px;
-  background-color: #42b983; /* Verde padrão do Vue */
+  background-color: #42b983;
   color: white;
 }
 
@@ -108,7 +104,7 @@ button {
 .btn-detalhes {
   padding: 10px 20px;
   width: 100%;
-  background-color: #42b983; 
+  background-color: #42b983;
   color: white;
   margin-top: 15px;
 }
@@ -117,12 +113,11 @@ button {
   background-color: #7f8c8d;
 }
 
-/* Estilos da Vitrine de Livros */
 .vitrine {
   display: flex;
   gap: 20px;
   justify-content: center;
-  flex-wrap: wrap; /* Permite que os cards quebrem a linha em telas menores */
+  flex-wrap: wrap;
 }
 
 .card-livro {
