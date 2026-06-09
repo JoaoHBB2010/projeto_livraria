@@ -21,5 +21,6 @@ import { produtos } from '@/data/products.js'
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
+  margin-top: 90px;
 }
 </style>
