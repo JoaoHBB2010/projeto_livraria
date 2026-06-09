@@ -1,18 +1,22 @@
 <script setup>
-// Este arquivo é um componente Vue que permite ao 
-// usuário visualizar e gerenciar os itens em seu carrinho 
-// de compras. Ele exibe uma lista de itens, permite que o 
-// usuário ajuste as quantidades ou remova itens, e mostra 
-// um resumo do total do carrinho. O componente é projetado 
-// para ser usado em uma página de carrinho de compras, onde 
+// Este arquivo é um componente Vue que permite ao
+// usuário visualizar e gerenciar os itens em seu carrinho
+// de compras. Ele exibe uma lista de itens, permite que o
+// usuário ajuste as quantidades ou remova itens, e mostra
+// um resumo do total do carrinho. O componente é projetado
+// para ser usado em uma página de carrinho de compras, onde
 // os usuários podem revisar seus itens antes de finalizar a compra.
 
 import { ref, computed } from 'vue'
 import CartItem from '@/components/cart/CartItem.vue'
 import CartSummary from '@/components/cart/CartSummary.vue'
 import { carrinho } from '@/ultils/cartUtils'
+import ProdutoCard from '@/components/ProdutoCard.vue'
+import { produtos } from '@/data/products'
 
 const cartItems = ref([...carrinho])
+
+const livros = ref(produtos)
 
 const total = computed(() =>
   cartItems.value.reduce(
@@ -20,6 +24,21 @@ const total = computed(() =>
     0
   )
 )
+
+function adicionarCarrinho(livro) {
+  const item = cartItems.value.find(i => i.id === livro.id)
+
+  if (item) {
+    item.quantidade = (item.quantidade ?? 1) + 1
+    item.precoTotal = item.quantidade * item.preco
+  } else {
+    cartItems.value.push({
+      ...livro,
+      quantidade: 1,
+      precoTotal: livro.preco
+    })
+  }
+}
 
 function incluir(id) {
   const item = cartItems.value.find((p) => p.id === id)
@@ -47,6 +66,14 @@ function remove(id) {
 <template>
   <div class="cart-panel">
     <h1>Carrinho sla</h1>
+    <div class="produtos">
+      <ProdutoCard
+        v-for="livro in livros"
+        :key="livro.id"
+        :livro="livro"
+        @adicionarCarrinho="adicionarCarrinho"
+      />
+    </div>
 
     <div v-if="cartItems.length">
       <CartItem
@@ -61,7 +88,10 @@ function remove(id) {
       <CartSummary :total="total" />
     </div>
 
-    <p v-else class="carrinho-vazio">O carrinho está vazio.</p>
+    <p v-else class="carrinho-vazio">
+      O carrinho está vazio.
+    </p>
+
   </div>
 </template>
 

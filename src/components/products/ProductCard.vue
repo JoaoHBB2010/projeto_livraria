@@ -1,3 +1,5 @@
+produtoCard.vue
+
 <script setup>
 import { ref } from 'vue'
 
@@ -5,7 +7,24 @@ defineProps({
   livro: Object
 })
 
+const emit = defineEmits(['adicionarCarrinho'])
+
 const mostrarDetalhes = ref(false)
+
+function adicionarCarrinho(livro) {
+  const item = cartItems.value.find(i => i.id === livro.id)
+
+  if (item) {
+    item.quantidade = (item.quantidade ?? 1) + 1
+    item.precoTotal = item.quantidade * item.preco
+  } else {
+    cartItems.value.push({
+      ...livro,
+      quantidade: 1,
+      precoTotal: livro.preco
+    })
+  }
+}
 </script>
 
 <template>
@@ -29,9 +48,12 @@ const mostrarDetalhes = ref(false)
       </div>
     </div>
 
-    <button class="btn-carrinho">
-      Adicionar ao Carrinho
-    </button>
+    <button
+  class="btn-carrinho"
+  @click="emit('adicionarCarrinho', livro)"
+>
+  Adicionar ao Carrinho
+</button>
   </div>
 </template>
 

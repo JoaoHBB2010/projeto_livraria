@@ -9,7 +9,7 @@ const emit = defineEmits([
 ])
 </script>
 
-<template>  
+<template>
   <div class="cart-item">
     <img v-if="item.capa" :src="item.capa" alt="Capa do livro" />
 
