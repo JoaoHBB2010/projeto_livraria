@@ -6,6 +6,14 @@ import ProductList from '@/components/products/ProductList.vue'
 
   <p>Hello word</p>
 
+  <div class="home">
+    <div class="header">
+      <h1>Bem-vindo à Nossa Livraria</h1>
+      <p>Explore nosso catálogo</p>
+    </div>
+
+    <ProductList />
+  </div>
 </template>
 
 <style scoped>
