@@ -3,6 +3,9 @@ import ProductList from '@/components/products/ProductList.vue'
 </script>
 
 <template>
+
+  <p>Hello word</p>
+
   <div class="home">
     <div class="header">
       <h1>Bem-vindo à Nossa Livraria</h1>

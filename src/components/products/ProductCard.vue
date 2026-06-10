@@ -91,6 +91,7 @@ h3 {
   margin-bottom: 10px;
   text-align: left;
   font-size: 14px;
+  color: black;
 }
 
 .btn-carrinho {
