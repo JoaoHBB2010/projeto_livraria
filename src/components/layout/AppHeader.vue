@@ -8,6 +8,7 @@
       <ul>
         <li><RouterLink to="/">Home</RouterLink></li>
         <li><RouterLink to="/produtos">Produtos</RouterLink></li>
+        <li><RouterLink to="/categorias">Categorias</RouterLink></li>
         <li><RouterLink to="/carrinho">Carrinho</RouterLink></li>
       </ul>
     </nav>
